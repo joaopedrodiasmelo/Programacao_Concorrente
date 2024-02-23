@@ -10,11 +10,12 @@
 
 typedef struct Ponto
 {
+  struct Ponto *anterior;
+  struct Ponto *proximo;
   tipoFILA *fila_presente_no_ponto;
   int identificador_ponto;
   int onibus_presente;
   pthread_mutex_t mutex_do_ponto;
-  pthread_cond_t liberar_onibus;
 
 } Ponto_de_Onibus;
 

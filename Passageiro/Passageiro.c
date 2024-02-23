@@ -79,7 +79,6 @@ void *thread_passageiro(void *args)
 
   // coloco a thread passageiro para dormir até ela entrar em um onibus
   pthread_cond_wait(&passageiros_no_onibus[indice].entrou_onibus, &mutex_auxiliar);
-  
 
   // registra o tempo de entrada do passageiro no onibus
   struct timespec entrada_onibus;

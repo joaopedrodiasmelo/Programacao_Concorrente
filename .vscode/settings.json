@@ -5,6 +5,7 @@
     "stdlib.h": "c",
     "ponto.h": "c",
     "pthread.h": "c",
-    "fila.h": "c"
+    "fila.h": "c",
+    "structs.h": "c"
   }
 }
